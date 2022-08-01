@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="주문하실 메뉴를 선택한 뒤 [선택완료]를 클릭해주세요."
+        android:layout_marginBottom="20dp"/>
+    <GridLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:columnCount="2"
+        android:rowCount="5">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="* 메뉴 종류 *"
+            android:layout_rowSpan="1"
+            android:textSize="18dp"/>
+
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="180dp"
+            android:layout_rowSpan="4"
+            android:layout_columnSpan="1"
+            android:scaleType="fitXY"
+            android:src="@drawable/seafood"
+            android:id="@+id/img"/>
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:id="@+id/rg">
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="해물 파스타(9,500원)"
+                android:id="@+id/seafood"/>
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="토마토 파스타(9,000원)"
+                android:id="@+id/tomato"/>
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="까르보나라(9,500원)"
+                android:id="@+id/nara"/>
+        </RadioGroup>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_columnSpan="2"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:text="선택 완료"
+            android:id="@+id/btn"/>
+    </GridLayout>
+
+</LinearLayout>

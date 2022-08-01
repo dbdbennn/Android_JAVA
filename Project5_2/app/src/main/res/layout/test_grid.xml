@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:height="70dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:text="[이름]메뉴 정리"
+        android:background="#D3B4F3"
+        android:textSize="30dp"
+        android:layout_margin="20dp"/>
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:rowCount="3" android:columnCount="2">
+        <TextView
+            android:gravity="right"
+            android:text="이름"
+            android:textSize="20dp"
+            android:layout_width="0dp"
+            android:layout_columnWeight="1"/>
+        <EditText
+            android:layout_width="0dp"
+            android:layout_columnWeight="1"
+            android:layout_marginLeft="20dp"
+            android:hint="이름을 입력하세요"/>
+    </GridLayout>
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:rowCount="3" android:columnCount="2">
+        <Button
+            android:gravity="center"
+            android:text="전화번호"
+            android:textSize="20dp"
+            android:layout_width="0dp"
+            android:layout_columnWeight="1"/>
+        <EditText
+            android:layout_width="0dp"
+            android:layout_columnWeight="1"
+            android:layout_marginLeft="20dp"
+            android:hint="전화번호를 입력하세요"/>
+    </GridLayout>
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:rowCount="3" android:columnCount="2">
+        <Button
+            android:gravity="center"
+            android:text="성별"
+            android:textSize="20dp"
+            android:layout_width="0dp"
+            android:layout_columnWeight="1"/>
+        <EditText
+            android:layout_width="0dp"
+            android:layout_columnWeight="1"
+            android:layout_marginLeft="20dp"
+            android:hint="성별을 입력하세요"/>
+    </GridLayout>
+
+    <Button
+        android:layout_marginHorizontal="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="가입"
+        android:textSize="25dp"/>
+
+
+</LinearLayout>

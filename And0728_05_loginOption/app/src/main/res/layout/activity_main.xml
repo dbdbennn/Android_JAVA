@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    tools:context=".MainActivity">
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnCount="3"
+        android:rowCount="2">
+
+        <ImageView
+            android:layout_height="match_parent"
+            android:layout_rowSpan="2"
+            android:layout_marginRight="10dp"
+            android:scaleType="fitXY"
+            android:src="@mipmap/ic_launcher_round" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="아이디 : "/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/edtID"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="비밀번호 : "/>
+        <EditText
+            android:id="@+id/edtPW"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </GridLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="right">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:text="로그인"
+            android:id="@+id/btnLogin"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="취소"
+            android:id="@+id/btnCancel"/>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    android:padding="20dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="50dp"
+        android:text="아래에 이름을 입력하세요"
+        android:textSize="20dp"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:hint="여기에 이름을 입력하세요."
+        android:id="@+id/edt_name"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="확인"
+        android:id="@+id/btn_OK"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="visibility 속성"
+        android:visibility="invisible"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="visibility 속성"
+        android:visibility="visible"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="enable 속성"
+        android:enabled="false"
+        android:visibility="visible"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#ff000055"
+        android:text="여기에 사용자 이름을 입력하세요."
+        android:textSize="22sp"
+        android:textColor="#88ff0000"
+        android:textStyle="bold|italic"
+        android:singleLine="true"
+        android:gravity="center"/>
+    <RadioGroup android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RadioButton
+            android:layout_width="0dp" android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="빨강"/>
+        <RadioButton
+            android:layout_width="0dp" android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="노랑"/>
+
+    </RadioGroup>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="체크박스"/>
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/editTesxt1"
+        android:textSize="20sp"
+        android:hint="숫자를 입력하세요."
+        android:inputType="numberPassword"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:background="#ffffff"
+        android:src="@drawable/q10"/>
+    <ImageButton
+        android:layout_width="300dp"
+        android:layout_height="100dp"
+        android:scaleType="fitXY"
+        android:layout_margin="5dp"
+        android:src="@drawable/q10"/>
+    <ImageButton
+        android:layout_width="300dp"
+        android:layout_height="100dp"
+        android:scaleType="fitCenter"
+        android:layout_margin="5dp"
+        android:src="@drawable/q10"/>
+</LinearLayout>
+</ScrollView>

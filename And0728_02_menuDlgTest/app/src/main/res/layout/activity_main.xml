@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <GridLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:columnCount="2">
+        <Button
+            android:layout_margin="10dp"
+            android:layout_width="110dp"
+            android:layout_height="50dp"
+            android:text="전화번호"
+            android:textSize="18dp"
+            android:backgroundTint="#DFDD32"/>
+        <EditText
+            android:id="@+id/edt_number"
+            android:layout_marginLeft="100dp"
+            android:layout_margin="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="전화번호를 적으시오"/>
+        <Button
+            android:id="@+id/btn_Sex"
+            android:layout_margin="10dp"
+            android:layout_width="110dp"
+            android:layout_height="50dp"
+            android:text="성   별"
+            android:textSize="18dp"
+            android:backgroundTint="#DFDD32"/>
+        <EditText
+            android:id="@+id/edt_Sex"
+            android:layout_marginLeft="100dp"
+            android:layout_margin="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="    성별을 적으시오    "/>
+    </GridLayout>
+    <Button
+        android:id="@+id/btn_Login"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="60dp"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="가  입"
+        android:textSize="20dp"
+        android:backgroundTint="#DFDD32"/>
+
+
+
+
+</LinearLayout>
