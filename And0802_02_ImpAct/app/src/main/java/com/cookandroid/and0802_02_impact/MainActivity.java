@@ -106,6 +106,44 @@ public class MainActivity extends AppCompatActivity {
                 finish();
             }
         });
+    }// onCreate()
+
+    @Override
+    protected void onStart() {
+        super.onStart();
+        android.util.Log.i("엑티버티 테스트","onStart()");
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+        android.util.Log.i("엑티버티 테스트","onResume()");
+    }
+
+    @Override
+    protected void onStop() {
+        super.onStop();
+        android.util.Log.i("엑티버티 테스트","onStop()");
+
+    }
+
+    @Override
+    protected void onPause() {
+        super.onPause();
+        android.util.Log.i("엑티버티 테스트","onPause()");
+
+    }
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        android.util.Log.i("엑티버티 테스트","onDestroy()");
+
+    }
+    @Override
+    protected void onRestart() {
+        super.onRestart();
+        android.util.Log.i("엑티버티 테스트","onRestart()");
     }
 }
 
