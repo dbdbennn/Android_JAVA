@@ -10,6 +10,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.And0802_03_ActFlag">
         <activity
+            android:name=".Third"
+            android:exported="false" />
+        <activity
+            android:name=".Second"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
