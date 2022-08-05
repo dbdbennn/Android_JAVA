@@ -15,7 +15,8 @@ public class MyDBHelper extends SQLiteOpenHelper {
     @Override
     public void onCreate(SQLiteDatabase sqLiteDatabase) {
         //테이블 생성
-        String str = "CREATE TABLE DiaryTBL(_id integer primary key autoincrement, diaryDate char(10), content varchar(500))";
+        String str = "CREATE TABLE DiaryTBL(_id integer primary key autoincrement, " +
+                "diaryDate char(10), content varchar(500))";
         sqLiteDatabase.execSQL(str); //이 코드로 실행하기?
     }
 
