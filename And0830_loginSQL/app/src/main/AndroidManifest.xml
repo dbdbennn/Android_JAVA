@@ -9,7 +9,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.And0830_loginSQL">
-        <activity android:name=".LoginActivity"/>
+        <activity android:name=".LoginOkActivity"/>
         <activity android:name=".RegisterActivity"/>
         <activity
             android:name=".MainActivity"
